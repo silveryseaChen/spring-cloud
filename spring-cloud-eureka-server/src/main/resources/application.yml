@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://www.chy1.com:8100/eureka/,http://www.chy2.com:8200/eureka/
+    registerWithEureka: true #表示是否将自己注册到eureka server，因为要构建集群环境，需要将自己注册到及群众，所以应该开启。默认为true，可不显式设置。
+    fetchRegistry: true  #表示是否从eureka server获取注册信息，如果是单一节点，不需要同步其他eureka server节点，则可以设置为false，但此处为集群，应该设置为true，默认为true，可不设置
+  server:
+    enable-self-preservation: true #自我保护
+    eviction-interval-timer-in-ms: 3000   # 清理间隔（单位毫秒，默认是60*1000）
+    renewalPercentThreshold: 0.3  #定义了renews 和renews threshold的比值，默认值为0.85
+
+---
+spring:
+  profiles: peer1
+
+server:
+  port: 8100
+
+eureka:
+  instance:
+    hostname: www.chy1.com
+
+---
+spring:
+  profiles: peer2
+
+server:
+  port: 8200
+
+eureka:
+  instance:
+    hostname: www.chy2.com
