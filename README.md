@@ -9,7 +9,7 @@ spring cloud 组件
 
 # eureka 2018年10月11日
 
-  **添加eureka注册中心
+  **添加eureka注册中心**
   
   eureka遗留问题1：未加入权限验证
   
