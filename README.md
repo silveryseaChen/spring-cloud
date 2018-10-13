@@ -1,7 +1,8 @@
 # spring-cloud
 spring cloud 组件
 
-# config _2018年10月7日_
+# config 
+_2018年10月7日_
 
   **配置中心可从git上获取相应配置**
   
