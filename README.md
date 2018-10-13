@@ -1,8 +1,7 @@
 # spring-cloud
 spring cloud 组件
 
-# config 
-_2018年10月7日_
+# config 2018年10月7日
 
   **配置中心可从git上获取相应配置**
   
@@ -15,6 +14,8 @@ _2018年10月7日_
   eureka遗留问题1：未加入权限验证
   
 # config 2018年10月13日
+  
+  **无需重启来刷新配置**
   
   配置中心通过调用/actuator/bus-refresh 即可更新配置，无需重启。
   
