@@ -17,7 +17,7 @@ spring cloud 组件
   
   **无需重启来刷新配置**
   
-  配置中心通过调用/actuator/bus-refresh 即可更新配置，无需重启。
+  配置中心通过调用/actuator/bus-refresh 即可更新配置，无需重启。部分解决config遗留问题1。
   
   config遗留问题2：自动刷新获取配置
   
