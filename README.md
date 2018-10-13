@@ -1,11 +1,11 @@
 # spring-cloud
 spring cloud 组件
 
-# config ·2018年10月7日·
+# config _2018年10月7日_
 
   **配置中心可从git上获取相应配置**
   
-  ·config遗留问题1·：需要重启来更新配置
+  config遗留问题1：需要重启来更新配置
 
 # eureka 2018年10月11日
 
