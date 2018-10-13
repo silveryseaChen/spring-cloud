@@ -1,9 +1,9 @@
 # spring-cloud
 spring cloud 组件
 
-# config 2018年10月7日
+#config 2018年10月7日
 
-  配置中心可从git上获取相应配置
+  **配置中心可从git上获取相应配置**
   
   config遗留问题1：需要重启来更新配置
 
