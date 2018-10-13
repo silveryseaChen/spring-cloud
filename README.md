@@ -7,13 +7,13 @@ spring cloud 组件
   
   config遗留问题1：需要重启来更新配置
 
-#eureka 2018年10月11日
+# eureka 2018年10月11日
 
   添加eureka注册中心
   
   eureka遗留问题1：未加入权限验证
   
-#config 2018年10月13日
+# config 2018年10月13日
   
   配置中心通过调用/actuator/bus-refresh 即可更新配置，无需重启。
   
