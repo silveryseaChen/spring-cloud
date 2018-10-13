@@ -13,3 +13,6 @@ spring cloud 组件
   
   配置中心通过调用/actuator/bus-refresh 即可更新配置，无需重启。
   
+  如果想实现自动刷新可以参考https://www.cnblogs.com/andyfengzp/p/6835969.html
+  
+  或者自己写个定时器处理，该功能暂未实现。
