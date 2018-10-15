@@ -20,8 +20,8 @@ public class ClientApplication {
     @Value("${server.port}")
     String name = "World";
 
-    @RequestMapping("/")
-    public String home() {
+    @RequestMapping("/hello")
+    public String hello() {
         log.debug(" client request ..");
         return "Hello " + name;
     }

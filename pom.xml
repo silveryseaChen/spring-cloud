@@ -12,6 +12,9 @@
         <module>spring-cloud-client</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-eureka-server</module>
+        <module>spring-cloud-ribbon</module>
+        <module>spring-cloud-turbine</module>
+        <module>spring-cloud-zipkin-server</module>
     </modules>
 
     <properties>
@@ -78,6 +81,14 @@
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
                 <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jcenter</id>
+            <name>jcenter</name>
+            <url>https://maven.aliyun.com/repository/jcenter</url>
+            <snapshots>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
         <repository>
