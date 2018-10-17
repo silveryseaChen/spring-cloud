@@ -24,3 +24,21 @@ spring cloud 组件
   如果想实现自动刷新可以参考https://www.cnblogs.com/andyfengzp/p/6835969.html
   
   或者自己写个定时器处理，该功能暂未实现。
+  
+# hystrix turbine ribbon 2018年10月15日
+  
+  **hystrix 断路由 添加请求异常默认处理**
+  
+  **hystrix-dashboard 断路由 监控**
+  
+  **turbine 聚合断路由 监控**
+  
+  **ribbon 负载策略**
+  
+# zipkin 2018年10月17日  
+    
+   **sleuth-zipkin 链路追踪**
+   
+   问题：在spring-cloud-client包中加入zipkin时，但在zipkin-server中未能监控到该服务。
+   怀疑是应该加入mq包的原因。
+    
