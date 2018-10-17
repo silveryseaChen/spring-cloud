@@ -3,16 +3,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone : http://www.chy1.com:8100/eureka/,http://www.chy2.com:8200/eureka/
-#开启 hystrix.stream 接口
-management:
-  endpoints:
-    web:
-      exposure:
-        include : hystrix.stream
 
 spring:
   application:
-    name: ribbon
+    name: zipkin-client
   sleuth:
     sampler:
       probability: 1.0
@@ -20,12 +14,12 @@ spring:
     base-url: http://zipkin-server
 ---
 server:
-  port: 8300
+  port: 8600
 spring:
-  profiles: ribbon1
+  profiles: env1
 
 ---
 server:
-  port: 8301
+  port: 8601
 spring:
-  profiles: ribbon2
+  profiles: env2

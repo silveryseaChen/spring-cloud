@@ -35,15 +35,14 @@ public class RibbonApplication {
         return new RestTemplate();
     }
 
-    @RequestMapping("/client/{path}")
+    @RequestMapping("/{client}/{path}")
     @HystrixCommand(fallbackMethod = "clientError") //dependence hystrix
-    public String index(@PathVariable String path){
-        return restTemplate.getForObject("http://spring-cloud-client/"+path, String.class);
+    public String index(@PathVariable String client, @PathVariable String path){
+        return restTemplate.getForObject("http://"+ client +"/"+path, String.class);
     }
 
-    public String clientError(String path){
-        return String.format(" client servlet [%s] unavailable", path);
+    public String clientError(String client, String path){
+        return String.format(" [%s] servlet [%s] unavailable", client, path);
     }
-
 
 }
