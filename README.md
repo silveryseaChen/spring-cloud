@@ -45,3 +45,6 @@
    问题：在spring-cloud-client包中加入zipkin时，但在zipkin-server中未能监控到该服务。
    怀疑是应该加入mq包的原因。
     
+# zuul 2018年11月04日  
+
+   **zuul 路由+过滤**

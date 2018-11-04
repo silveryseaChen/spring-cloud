@@ -1,0 +1,20 @@
+server:
+  port: 8700
+spring:
+  application:
+    name: zuul
+
+#注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://www.chy1.com:8100/eureka/,http://www.chy2.com:8200/eureka/
+
+zuul:
+  routes:
+    ribbon:
+      path: /ribbon/**
+      serviceId: ribbon
+    client:
+      path: /client/**
+      serviceId: spring-cloud-client

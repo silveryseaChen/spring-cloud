@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Created by chy on 2018/10/15.
+ * 负载均衡
  */
 @SpringBootApplication
 @RestController
