@@ -17,6 +17,7 @@
         <module>spring-cloud-zipkin-server</module>
         <module>spring-cloud-zipkin-client</module>
         <module>spring-boot-zuul</module>
+        <module>spring-cloud-feign</module>
     </modules>
 
     <properties>
