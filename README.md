@@ -45,13 +45,21 @@
    问题：在spring-cloud-client包中加入zipkin时，但在zipkin-server中未能监控到该服务。
    怀疑是应该加入mq包的原因。
     
+   **解决上述问题**
+   
+   zipkin 收集数据 可以通过 http 或者 rabbit kafka，默认为http
+   
+   可以通过 spring.zipkin.sender.type 进行设置，对应的值为 WEB RABBIT KAFKA ，具体可参见枚举类ZipkinSenderProperties.SenderType
+   
+   在加入spring-cloud-starter-bus-amqp 后，将会默认使用rabbit,为什么使用了rabbit不可以，下次在研究下。
+    
 # zuul 2018年11月04日  
 
    **zuul 路由+过滤**
    
 # feign 2018年11月05日  
 
-   **feign http 客户端**   
+   **feign - spring cloud rpc**   
    
    集成了ribbon 和 hystrix ,所以具有负载和断路由的功能。
    

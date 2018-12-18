@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: zuul
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://zipkin-server
 
 #注册中心地址
 eureka:

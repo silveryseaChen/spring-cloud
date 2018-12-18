@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by chy on 18/11/4.
+ *
+ * zuul 过滤
+ * 通过 filterType 判断 过滤 时机  请求前过滤 请求后过滤
+ *
  */
 @Slf4j
 @Component
@@ -38,10 +42,8 @@ public class TokenFilter extends ZuulFilter {
             try {
                 ctx.getResponse().getWriter().write("token is empty");
             }catch (Exception e){}
-
-            return null;
         }
-        log.info("ok");
+        log.info("ok, token is [{}]", accessToken);
         return null;
     }
 }
