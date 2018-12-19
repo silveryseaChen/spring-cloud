@@ -42,6 +42,13 @@
             <version>2.11.7</version>
         </dependency>
 
+        <!-- 加入 rabbitmq 以stream 方式 传输链路消息 -->
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
     </dependencies>
 
 

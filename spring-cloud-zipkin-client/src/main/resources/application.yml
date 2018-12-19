@@ -12,6 +12,13 @@ spring:
       probability: 1.0
   zipkin:
     base-url: http://zipkin-server
+    sender:
+      type: rabbit
+  rabbitmq:
+    host: 192.168.13.64
+    port: 5672
+    username: guest1
+    password: guest1
 ---
 server:
   port: 8600
